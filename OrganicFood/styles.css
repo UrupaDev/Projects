@@ -251,7 +251,7 @@ body {
 .about__additional-item {
   padding-left: 20px;
 }
-.about__additional-item-title {
+.about__additional-item-title, .eco__items-title {
   margin: 0;
   font-family: 'Roboto';
   font-style: normal;
@@ -301,7 +301,7 @@ body {
 }
 .shop__wrapper {
   width: 1381px;
-  height: 1422px;
+  height: 1482px;
   margin: 0 auto;
   padding-top: 120px;
 }
@@ -387,6 +387,9 @@ body {
   padding-left: 20px;
   padding-top: 20px;
 }
+.shop__button-input:hover {
+  background:#7EB693
+}
 .shop__item-name {
   margin: 0;
   padding-top: 19px;
@@ -461,3 +464,137 @@ body {
  #shop__item-almonds p::before {
   content: '$ 43.00 USD';
  }
+.testimonial__wrapper {
+  width: 1440px;
+  height: 1248px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('img/testimonial.png');
+}
+.testimonial__subtitle,.eco__subtitle {
+  margin: 0;
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+.testimonial__subtitle {
+  padding-top: 130px;
+  text-align: center;
+}
+.testimonial__title, .eco__title {
+  margin: 0;
+  font-family: 'Yellowtail';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #274C5B;
+}
+.testimonial__title {
+  text-align: center;
+}
+.testimonial__photo {
+  width: 115px;
+  height: 115px;
+  padding-top: 60px;
+}
+.testimonial__stars {
+  width: 123px;
+  height: 27px;
+  padding-top: 18px;
+}
+.testimonial__text, .eco__items-text {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.testimonial__text {
+  padding-top: 34px;
+  text-align: center;
+}
+.testimonial__name {
+  padding-top: 23px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  margin: 0;
+}
+.testimonial__customer {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin: 0;
+}
+.testimonial__customer:after {
+  content: '';
+  width: 966px;
+  height: 2px;
+  background: #E0E0E0;
+  display: block;
+  position: relative;
+  padding-left: 0;
+  margin-top: 96px;
+}
+.testimonial__statistic {
+  padding-top: 100px;
+  width: 1090px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial__circle {
+  width: 250px;
+  height: 250px;
+}
+.eco__wrapper {
+  width: 1440px;
+  height: 704px;
+  margin: 0 auto;
+  display: flex;
+}
+.eco__item{
+  width: 720px;
+  height: 623px;
+  background: #FFFFFF;
+  border-radius: 30px 0px 0px 30px;
+  position: relative;
+  left: -60px;
+  top: 40px;
+  float: left;
+  padding-left: 60px;
+}
+.eco__subtitle {
+  padding-top: 39px;
+}
+.eco__items {
+  padding-top: 29px;
+  margin: 0;
+}
+.eco__items-title {
+  padding-top: 9px;
+}
