@@ -20,6 +20,7 @@ body {
   margin: 0 auto;
   display: flex;
   background: #FFFFFF;
+  z-index: 100;
 }
 .logo {
   width: 37px;
@@ -649,7 +650,7 @@ body {
 }
 .news__wrapper {
   width: 1440px;
-  height: 1017px;
+  height: 970px;
   margin: 0 auto;
   padding-left: 30px;
   display: block;
@@ -778,3 +779,78 @@ body {
   padding-top: 27px;
   padding-left: 10px;
 }
+.subscribe__wrapper {
+  width: 1380px;
+  height: 320px;
+  background-image: url('img/footer.png');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 157px;
+  position: relative;
+}
+.subscribe__title h5 {
+  float: left;
+  height: 100px; 
+  position: absolute; 
+  top: 50%; 
+  margin: -50px 0 0 0;
+  padding-left: 70px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.subscribe__form {
+  float: right;
+  padding-top: 119px;
+  padding-right: 90px;
+  box-sizing: border-box;
+}
+.subscribe__form-input {
+  width: 350px;
+  height: 82px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.subscribe__form-button {
+  margin: 0 0 0 10px;
+  width: 197px;
+  height: 82px;
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  border-radius: 16px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #FFFFFF;
+}
+input::placeholder {
+  opacity: 70%;
+}
+input[type="email"] {
+  padding: 10px 30px; /* Поля навколо тексту */
+  outline: none;
+  border: none;
+}
+.subscribe__form-button:hover {
+  background: #7EB693;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #c7dacd;
+  text-shadow: none;
+  }
