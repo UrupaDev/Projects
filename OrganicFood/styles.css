@@ -3,6 +3,10 @@ body {
   font-family: 'Yellowtail', cursive;
   margin: 0 auto;
 }
+* p, h4, ul {
+  margin: 0;
+  padding: 0;
+}
 .header-conteiner {
   position: relative;
   margin-top: 130px;
@@ -13,14 +17,17 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  max-width: 1440px;
   width: 100%;
-  height: 125px;
-  padding-left: 31px;
-  margin: 0 auto;
+  height: 90px;
   display: flex;
   background: #FFFFFF;
   z-index: 100;
+  box-shadow: 0px 2px 4px 1px rgb(0 0 0 / 20%);
+}
+.header-conteiner__items {
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
 }
 .logo {
   width: 37px;
@@ -79,8 +86,10 @@ body {
   height: 913px;
   width: 100%;
   margin: 0 auto;
+  margin-top: -20px;
+}
+.home__items {
   padding-left: 30px;
-  margin-top: 20px;
 }
 .home__subtitle {
   width: 241px;
@@ -853,4 +862,79 @@ input[type="email"] {
   border-radius: 10px;
   box-shadow: 2px 2px 5px #c7dacd;
   text-shadow: none;
-  }
+}
+.footer__wrapper {
+  width: 1440px;
+  height: 470px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 182px;
+}
+.footer__wrapper h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+.contact-us__field {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 19px;
+  border-right: 1px solid #D5D5D5;
+}
+.contact__titles {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.contact-us__data, .utility__items li {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.contact-us__data {
+  text-align: right;
+}
+.contact-us__item {
+  padding-top: 38px;
+}
+.social__text p {
+  padding-top: 50px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.social__logo {
+  text-align: center;
+}
+.utility__items li {
+  list-style-type: none;
+  padding-bottom: 24px;
+}
+.utility__menu h4 {
+  padding-bottom: 20px;
+}
+.utility__menu {
+  border-left: 1px solid #D5D5D5;
+  padding-left: 19px;
+}
