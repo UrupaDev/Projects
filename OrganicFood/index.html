@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=1440px">
         <link rel="stylesheet" href="../normalize.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,38 +11,42 @@
         <title>Organick</title>
     </head>
     <body>
-      <header class="header-conteiner">
-        <div id="header-conteiner__fixed">
-          <div class="header-conteiner__items">
-          <div class="img-logo">
-            <a href="/" > <img src="img/logo.JPG" alt="logo" class="logo"> </a>
-            <a href="/"> <img src="img/vector.png" alt="name"> </a>
+      <header class="header__conteiner">
+        <nav class="header_items">
+
+          <div class="header__logo">
+            <a href="/" > <img class="logo" src="img/logo.JPG" alt="logo"> </a>
+            <a href="/"> <img class="name" src="img/vector.png" alt="name"> </a>
           </div>
-          <nav>
-            <ul class="c-nav">
-              <li class="nav-item" id="nav-item-activ">
+
+          <div class="header__menu">
+            <ul class="menu">
+              <li class="menu__items">
                 <a href="#home">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="menu__items">
                 <a href="#about-us">About Us</a>
               </li>
-              <li class="nav-item">
+              <li class="menu__items">
                 <a href="#shop">Shop</a>
               </li>
-              <li class="nav-item">
+              <li class="menu__items">
                 <a href="#pages">Pages</a>
               </li>
-              <li class="nav-item">
+              <li class="menu__items">
                 <a href="#contact-us">Contact Us</a>
               </li>
             </ul>
-          </nav>
+          </div>
+
+         <div>
           <form class="button-basket" action="" method="get" target="_blank">
             <input type="button" class="basket" value="Basket">
           </form>
           </div>
-        </div>
+        </nav>
       </header>
+
       <section class="home" id="home">
         <div class="home__wrapper">
           <div class="home__items">
@@ -105,7 +109,7 @@
           <h2 class="shop__title-title">Our Products</h2>
         </div>
         <!--Shop page-->
-        <div class="shop__items">
+        <div class="shop__items" id="shop">
 
           <div class="shop__item" id="shop__item"><a href="#"">
             <div>
@@ -338,6 +342,7 @@
         </div>
       </section>
 
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
       <footer class="footer__wrapper">
         <div class="contact-us__field">
@@ -369,7 +374,7 @@
           </div>
           <div class="social__icons"></div> 
         </div>
-
+        <span class="iconify" data-icon="entypo-social:twitter-with-circle"></span>
 
         <div class="utility__field">
           <div class="utility__menu">
