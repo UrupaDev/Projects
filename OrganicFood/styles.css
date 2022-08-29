@@ -41,7 +41,8 @@ header:after, footer:after {
 header {
   height: 100px;
   background-color: #FFFFFF;
-  box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 10px rgb(57, 56, 56);
+  z-index: 32;
 }
 .header_items {
   width: 100%;
@@ -243,6 +244,8 @@ header {
   padding-left: 30px;
 }
 .about__main {
+  max-width: 710px;
+  width: 100%;
   box-sizing: border-box;
   float: left;
 }
@@ -905,7 +908,7 @@ input[type="email"] {
 .footer__wrapper {
   max-width: 1440px;
   width: 100%;
-  height: 470px;
+  height: 490px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -977,4 +980,20 @@ input[type="email"] {
 .utility__menu {
   border-left: 1px solid #D5D5D5;
   padding-left: 19px;
+}
+.social__icons {
+  display: inline-flex;
+  width: 300px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 65px;
+  text-align: center;
+}
+.social__icons img {
+  opacity: 0.8;
+}
+.social__icons img:hover {
+  opacity: 1;
 }
