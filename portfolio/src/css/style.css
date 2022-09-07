@@ -929,7 +929,10 @@ textarea {
   position: absolute;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 20px;
+  padding-top: 50px;
 }
 .experience .experience__wrapper .time-line .experience__cards .experience__card {
   width: 354px;
@@ -959,7 +962,6 @@ textarea {
 .experience .experience__wrapper .time-line .experience__cards .experience__details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 .experience .experience__wrapper .time-line .experience__cards .experience__details p {
   font-family: "Courier Prime";
@@ -967,4 +969,12 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   text-transform: none;
+}
+.experience .experience__wrapper .time-line .experience__cards .details1 {
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.experience .experience__wrapper .time-line .experience__cards .details2 {
+  align-items: flex-end;
+  padding-top: 48px;
 }
