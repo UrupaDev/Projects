@@ -5,55 +5,38 @@
   background-position: bottom right;
   width: 100%;
   filter: opacity(0.7);
-  padding-bottom: 50px;
 
   .header__wrapper {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 10px 15px 0 15px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-areas: 
-    "logo . "
-    "nav text"
-    "scroll . ";
     padding-bottom: 150px;
 
-    #my-header {
-      width: 100%;
-      max-width: 1440px;
-      display: flex;
-      position: fixed;
-      justify-content: space-between;
-      align-items: center;
+    .header__logo {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 15px;
+      display: inline-block;
 
-      .header__logo {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        grid-area: logo;
-        padding-top: 15px;
+      .logo__items{
+        color: rgb(26, 25, 25);
+
+        .logo__name {
+          font-size: 21px;
+        }
   
-        .logo__items{
-          color: rgb(26, 25, 25);
-  
-          .logo__name {
-            font-size: 21px;
-          }
-    
-          .logo__surname {
-            font-size: 28px;
-          }
+        .logo__surname {
+          font-size: 28px;
         }
       }
     }
-
+    
     .header__nav {
-      grid-area: nav;
 
       .nav__items {
+        padding-top: 300px;
         
         .nav__item {
           font-family: "Courier Prime";
@@ -140,28 +123,38 @@
         text-orientation: upright; 
         font-size: 10px;
         letter-spacing: 1px;
+        padding-top: 30px;
       }
     }
 
     .header__text {
       font-family: "Roboto";
-      grid-area: text;
       color:rgb(62, 39, 39);
       z-index: 1;
+      margin-top: -470px;
+      padding-bottom: 255px;
+      padding-left: 200px;
 
       h1 {
         font-weight: 700;
         font-size: 40px;
+        display: inline-block;
+        background: #ffffffd1;
       }
 
       p{
         font-weight: 400;
         font-size: 24px;
+        display: inline-block;
+        background: #ffffffd1;
+        margin-top: 10px;
       }
 
       .social-networks {
-        padding-top: 90px;
+        margin-top: 90px;
         font-size: 25px;
+        display: inline-block;
+        background: #ffffffd1;
 
         .social-networks__item {
           color: rgb(26, 25, 25);
@@ -187,18 +180,33 @@
 
 
 @media (max-width: 768px) {
-  .header .header__wrapper {
+  .header {
+    background-size: 700px;
 
-    .header__nav {
-      display: none;
-    }
+    .header__wrapper {
+      height: 850px;
 
-    .header__burger-menu  {
-      display: block;
-      top: 45px;
-      position: absolute;
-      right: 0;
-      padding-right: 15px;
+      .header__nav {
+        display: none;
+      }
+  
+      .header__burger-menu  {
+        display: block;
+        top: 25px;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.8196078431);
+      }
+
+      .header__scroll {
+        display: none;
+      }
+
+      .header__text {
+        margin-top: 265px;
+        padding-left: 16px;
+      }
     }
   }
 
@@ -218,6 +226,10 @@
       align-items: center;
       position: absolute;
       top: 50px;
+
+      .nav__items {
+        padding-top: 0;
+      }
     }
 
     .header__text {

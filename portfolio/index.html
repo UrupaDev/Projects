@@ -13,14 +13,12 @@
 
     <header class="header" id="home">
       <div class="header__wrapper">
-        <div id="my-header">
           <div class="header__logo">
             <a href="#home" class="logo__items">
               <span class="logo__name">Tetiana</span><br>
               <span class="logo__surname">Urupa</span>
             </a>
           </div>
-        </div>
         <nav class="header__nav" id="nav-menu">
           <ul class="nav__items">
             <li class="nav__item"><a href="#home">Home</a></li>
@@ -39,8 +37,8 @@
           <p>scroll down &dArr;</p>
         </div>
         <div class="header__text">
-          <h1>I`m Tetiana Urupa. </h1>
-          <p>Front End Developer</p>
+          <h1>I`m Tetiana Urupa. </h1><br>
+          <p>Front End Developer</p><br>
           <div class="social-networks">
             <a href="https://www.linkedin.com/in/tetiana-urupa-87400079/" target="_blank" class="social-networks__item">
               <i class="fa-brands fa-linkedin-in"></i>
@@ -175,22 +173,15 @@
           </div>
 
           <div class="projects__items">
-            <div class="card">
-              <input type="radio" name="select" id="slide_1" checked>
-              <input type="radio" name="select" id="slide_2">
-              <input type="radio" name="select" id="slide_3">
-              <!-- <input type="checkbox" id="slideImg"> -->
-            
-              <div class="slider">
-                <label for="slide_1" class="slide slide_1"></label>
-                <label for="slide_2" class="slide slide_2"></label>
-                <label for="slide_3" class="slide slide_3"></label>
-              </div>
-            
-              <div class="inner_part">
-                <label for="slideImg" class="img">
-                  <img class="img_1" src="img/solis.png">
-                </label>
+            <div class="tabs">
+              <input type="radio" name="select" id="tab-btn-1" checked>
+              <label class="tabs__slider" for="tab-btn-1">Solis</label>
+              <input type="radio" name="select" id="tab-btn-2">
+              <label class="tabs__slider" for="tab-btn-2">Name 2</label>
+              <input type="radio" name="select" id="tab-btn-3">
+              <label class="tabs__slider" for="tab-btn-3">Name 3</label>        
+              <div class="inner_part" id="content-1">
+                 <a href="https://spontaneous-alfajores-cadb17.netlify.app/" target="_blank"><img class="img_1" src="img/solis.png"></a> 
                 <div class="content content_1">
                   <div class="title">Solis - blockchain company</div>
                   <div class="text">
@@ -200,12 +191,9 @@
                   </div>
                   <a href="https://spontaneous-alfajores-cadb17.netlify.app/" target="_blank">Live</a>
                 </div>
-              </div>
-            
-              <div class="inner_part">
-                <label for="slideImg" class="img">
-                  <img class="img_2" src="img/projects.jpg">
-                </label>
+              </div>  
+              <div class="inner_part" id="content-2">
+                <a href="/#"><img class="img_2" src="img/projects.jpg"></a>  
                 <div class="content content_2">
                   <div class="title">Project 2</div>
                   <div class="text">
@@ -214,11 +202,8 @@
                   <a href="/#">Read More</a>
                 </div>
               </div>
-            
-              <div class="inner_part">
-                <label for="slideImg" class="img">
-                  <img class="img_3" src="img/projects.jpg">
-                </label>
+              <div class="inner_part" id="content-3">
+                <a href="/#"><img class="img_3" src="img/projects.jpg"></a> 
                 <div class="content content_3">
                   <div class="title">Project 3</div>
                   <div class="text">Located on the shores of the Aegean Sea, west of the Anatolian Peninsula, İzmir is the third-largest city in Turkey.

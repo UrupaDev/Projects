@@ -34,14 +34,3 @@ burger.addEventListener("click", function(e) {
 }, false);
 
 
-
-// var burger_button = document.getElementById("header__burger-menu");
-// var sticky_burger = burger_button.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky_burger) {
-//     burger_button.classList.add("sticky-button");
-//   } else {
-//     burger_button.classList.remove("sticky-button");
-//   }
-// }
