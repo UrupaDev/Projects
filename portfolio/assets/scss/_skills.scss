@@ -1,0 +1,238 @@
+.skills {
+  position: relative;
+
+  .skills__about {
+    background: url(../../img/bg_about.jpg);
+    background-size: cover;
+    padding-top: 300px;
+    text-align: center;
+
+    .skills__title {
+      font-family: "Courier Prime";
+      padding-bottom: 20px;
+      text-transform: uppercase;
+
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 24px;
+
+        span {
+          color: rgb(122, 69, 79);
+          font-weight: 700;
+          background: rgba(200, 200, 217, 0.4);
+        }
+      }
+    }
+
+    .skills__list {
+      font-family: "Courier Prime";
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+
+      .list__items {
+        max-width: 650px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 120px;
+
+        li {
+          padding-bottom: 20px;
+        }
+
+        .list__item {
+          padding-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          position: relative;
+
+          h3 {
+            color:rgba(100,100,100,0.9);
+            display: flex;
+          }
+
+          p {
+            display: flex;
+            justify-content: flex-start;
+          }
+
+          .list__item_style{
+            width: 0%;
+            height: 5px;
+            background: rgb(122, 69, 79);
+            margin-top: 5px;
+            background-size: 353px 5px;
+            border-radius: 12px;
+            position: relative;
+
+            .list__item_shadow {
+              width: 100%;
+              height: 15px;
+              background: linear-gradient(to bottom,rgba(185, 173, 173, 0.17),rgba(97, 91, 91, 0.1),rgba(53, 51, 51, 0));
+              transform: skew(45deg) translate(4px,3px);
+            }
+          }
+
+          .full-line {
+            position: absolute;
+            max-width: 494px;
+            width: 100%;
+            height: 5px;
+            background: #c8c8d969;
+            top: 25px;
+            left: 163px;
+          }
+
+          .item1 {
+            animation: loading1 2s ease-in-out forwards;
+
+            @keyframes loading1 {
+              to {
+              width:90%;
+              }
+            }
+          }
+
+          .item2 {
+            animation: loading2 2s ease-in-out forwards;
+
+            @keyframes loading2 {
+              to {
+              width:30%;
+              }
+            }
+          }
+
+          .item3 {
+            animation: loading3 2s ease-in-out forwards;
+
+            @keyframes loading3 {
+              to {
+              width:70%;
+              }
+            }     
+          }
+
+          .item4 {
+            animation: loading4 2s ease-in-out forwards;
+
+            @keyframes loading4 {
+              to {
+              width:70%;
+              }
+            }
+          }
+
+          .item5 {
+            animation: loading5 2s ease-in-out forwards;
+
+            @keyframes loading5 {
+              to {
+              width:60%;
+              }
+            }
+          }
+
+          .item6 {
+            animation: loading6 2s ease-in-out forwards;
+
+            @keyframes loading6 {
+              to {
+              width:70%;
+              }
+            }
+          }
+
+          .item7 {
+            animation: loading7 2s ease-in-out forwards;
+
+            @keyframes loading7 {
+              to {
+              width:50%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .skills__additional {
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+    
+      .skills__additional-items {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        gap: 20px;
+
+        .skills__additional-item {
+          display: flex;
+          align-items: center;
+          background: #dbd3ca;
+          border-radius: 20px;
+          width: 150px;
+          height: 40px;
+          justify-content: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+
+          p {
+            padding-left: 10px;
+            font-family: "Courier Prime";
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .skills__additional-title {
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+
+      h3 {
+        font-family: "Courier Prime";
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+
+  .skills .skills__about .skills__items {
+
+    .skills__additional {
+      max-width: 600px;
+  
+      .skills__additional-items .skills__additional-item {
+  
+        img {
+          width: 20px;
+          height: 20px;
+        }
+  
+        p {
+          font-size: 12px;
+        }
+      }
+    } 
+  }
+}

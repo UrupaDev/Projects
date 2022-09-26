@@ -1,0 +1,227 @@
+.header {
+  background: url(../../img/my_photo.png);
+  background-size:900px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  filter: opacity(0.7);
+  padding-bottom: 50px;
+
+  .header__wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "logo . "
+    "nav text"
+    "scroll . ";
+    padding-bottom: 150px;
+
+    #my-header {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+
+      .header__logo {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        grid-area: logo;
+        padding-top: 15px;
+  
+        .logo__items{
+          color: rgb(26, 25, 25);
+  
+          .logo__name {
+            font-size: 21px;
+          }
+    
+          .logo__surname {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .header__nav {
+      grid-area: nav;
+
+      .nav__items {
+        
+        .nav__item {
+          font-family: "Courier Prime";
+          font-weight: 400;
+          font-size: 14px;
+          padding-bottom: 40px;
+
+          a {
+            color: rgb(25, 25, 25);
+
+            &:hover {
+              color: rgb(122, 69, 79);
+            }
+          }
+        }
+      }
+    }
+
+    .header__burger-menu {
+      display: none;
+      align-items: center;
+      padding: 0 15px;
+      z-index: 1;
+    
+      .burger-menu__conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 20px;
+      }
+      span {
+        margin: auto;
+        width: 34px;
+        height: 2px;
+        background-color: black;
+    
+        &:before {
+          content: "";
+          position: absolute;
+          width: 34px;
+          height: 2px;
+          background-color: black;
+          transform: translateY(-8px);
+          transition: 0.4s;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 34px;
+          height: 2px;
+          background-color: black;
+          transform: translateY(8px);
+          transition: 0.4s;
+        }
+      }
+    
+      &_active {
+        span {
+          height: 0;
+          &:before {
+            transform: rotate(45deg);
+            width: 25px;
+          }
+    
+          &::after {
+            transform: rotate(-45deg);
+            width: 25px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+
+    .header__scroll {
+      grid-area: scroll;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+
+      p {
+        writing-mode: vertical-lr; 
+        text-orientation: upright; 
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .header__text {
+      font-family: "Roboto";
+      grid-area: text;
+      color:rgb(62, 39, 39);
+      z-index: 1;
+
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+
+      p{
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      .social-networks {
+        padding-top: 90px;
+        font-size: 25px;
+
+        .social-networks__item {
+          color: rgb(26, 25, 25);
+          outline: 0;
+
+          i {
+            padding-right: 10px;
+  
+            &:hover {
+              color: rgb(122, 69, 79);
+            }
+  
+            &:active {
+              color: rgb(113, 110, 110);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header .header__wrapper {
+
+    .header__nav {
+      display: none;
+    }
+
+    .header__burger-menu  {
+      display: block;
+      top: 45px;
+      position: absolute;
+      right: 0;
+      padding-right: 15px;
+    }
+  }
+
+  .header .header__items_active {
+    align-items: center;
+
+    .header__logo {
+      display: none;
+    }
+
+    .header__nav {
+      display: flex;
+      flex-direction: column;
+      min-width: 100px;
+      width: 100%;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+    }
+
+    .header__text {
+      padding-top: 150px;
+    }
+  }
+}

@@ -1,0 +1,268 @@
+.projects {
+  position: relative;
+
+  .projects__wrapper {
+    background: url(../../img/texture2.webp);
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+
+    .projects__title {
+      font-family: "Courier Prime";
+      padding-bottom: 40px;
+      text-transform: uppercase;
+
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+
+    .projects__items {
+      padding: 0 15px;
+
+      .card {
+        height: 500px;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+        margin-top: 50px;
+        position: relative;
+      }
+      
+      .card .inner_part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: absolute;
+      }
+      
+      #slideImg:checked ~ .inner_part {
+        padding: 0;
+        transition: .1s ease-in;
+      }
+      
+      .inner_part .img {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        overflow: hidden;
+        flex-shrink: 0;
+        border-radius: 20px;
+      }
+      
+      #slideImg:checked ~ .inner_part .img {
+       height: 350px;
+       width: 850px;
+       z-index: 99;
+       transition: .3s .2s ease-in;
+      }
+      
+      .img img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0;
+        transition: .6s;
+      }
+      
+      #slide_1:checked ~ .inner_part .img_1,
+      #slide_2:checked ~ .inner_part .img_2,
+      #slide_3:checked ~ .inner_part .img_3 {
+        opacity: 1;
+        transition-delay: .2s;
+      }
+      
+      .content {
+        padding: 20px;
+        width: 530px;
+        margin-left: 50px;
+        opacity: 0;
+        transition: .6s; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 460px;
+        justify-content: space-between;
+        font-family: "Courier Prime";
+  
+        .text-used {
+          padding-top: 20px;
+        }
+      }
+      
+      #slideImg:checked ~ .inner_part .content {
+        display: none;
+      }
+      
+      #slide_1:checked ~ .inner_part .content_1,
+      #slide_2:checked ~ .inner_part .content_2,
+      #slide_3:checked ~ .inner_part .content_3 {
+        opacity: 1;
+        margin-left: 0;
+        z-index: 100;
+        transition-delay: .3s;
+      }
+      
+      .content .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #0d0925;
+        margin: 0 0 20px 0;
+      }
+      
+      .content .text {
+        font-size: 19px;
+        color: #4e4a67;
+        margin: 0 auto 30px auto;
+        line-height: 1.5em;
+        text-align: justify;
+        line-height: 20px;
+      }
+      
+      .content a {
+        width: 200px;
+        border: none;
+        font-size: 14px;
+        letter-spacing: 4px;
+        line-height: 50px;
+        font-family: "Courier Prime";
+        font-weight: 700;
+        color: #383632;
+        float: right;
+        border: 0 solid;
+        box-shadow: inset 0 0 4px rgb(122, 69, 79);
+        outline: 1px solid;
+        outline-color: rgb(122, 69, 79, 0.5);
+        outline-offset: 0px;
+        text-shadow: none;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  
+        &:hover {
+          border: 1px solid;
+          box-shadow: inset 0 0 20px rgba(122, 69, 79, .5), 0 0 20px rgba(122, 69, 79, .2);
+          outline-color: rgba(122, 69, 79, 0);
+          outline-offset: 15px;
+          text-shadow: 1px 1px 2px rgb(202, 171, 177); 
+        }
+      } 
+    }
+    
+    .content button:hover {
+      background: #cecece;
+      color: #000000;
+    }
+    
+    .slider {
+      position: absolute;
+      top: -50px;
+      left: 270px;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    
+    #slideImg:checked ~ .slider {
+      display: none;
+    }
+    
+    .slider .slide {
+      position: relative;
+      height: 50px;
+      width: 150px;
+      background: rgb(202, 171, 177);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      display: inline-flex;
+      margin: 0 3px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: rgb(122, 69, 79);
+        color: #dbd3ca;
+      }
+    }
+
+    .slide_1 {
+
+      &::after {
+        content: 'Solis';
+        position: absolute;
+        font-size: 20px;
+        letter-spacing: 4px;
+        font-family: "Courier Prime";
+        font-weight: 700;
+      }
+    }
+    
+    .slider .slide:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: -100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      transform: scaleX(0);
+      transition: transform .6s;
+      transform-origin: left;
+    }
+    
+    #slide_1:checked ~ .slider .slide_1:before,
+    #slide_2:checked ~ .slider .slide_2:before,
+    #slide_3:checked ~ .slider .slide_3:before {
+      transform: scaleX(1);
+      width: 100%;
+    }
+    
+    input {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1095px) {
+
+  .projects .projects__wrapper {
+
+    .slider {
+      left: 185px;
+
+      .slide {
+        width: 99px;
+      }
+    }
+
+    .projects__items {
+      
+
+      .card {
+        height: 860px;
+        max-width: 574px;
+        width: 100%;
+    
+        .inner_part {
+          flex-direction: column;
+          padding-top: 50px;
+        }
+      }
+
+      .content {
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+    
+    
+  }
+}

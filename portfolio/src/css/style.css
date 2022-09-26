@@ -1,342 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0-modified | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* make sure to set some focus styles for accessibility */
-:focus {
-  outline: 0;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-input[type=search] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  box-sizing: content-box;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  max-width: 100%;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
- * Known issue: no IE 6 support.
- */
-[hidden] {
-  display: none;
-}
-
-/**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-size: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/**
- * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
- * 2. Improve image quality when scaled in IE 7.
- */
-img {
-  border: 0; /* 1 */
-  -ms-interpolation-mode: bicubic; /* 2 */
-}
-
-/**
- * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
- */
-figure {
-  margin: 0;
-}
-
-/**
- * Correct margin displayed oddly in IE 6/7.
- */
-form {
-  margin: 0;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct color not being inherited in IE 6/7/8/9.
- * 2. Correct text not wrapping in Firefox 3.
- * 3. Correct alignment displayed oddly in IE 6/7.
- */
-legend {
-  border: 0; /* 1 */
-  padding: 0;
-  white-space: normal; /* 2 */
-  *margin-left: -7px; /* 3 */
-}
-
-/**
- * 1. Correct font size not being inherited in all browsers.
- * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
- *    and Chrome.
- * 3. Improve appearance and consistency in all browsers.
- */
-button,
-input,
-select,
-textarea {
-  font-size: 100%; /* 1 */
-  margin: 0; /* 2 */
-  vertical-align: baseline; /* 3 */
-  *vertical-align: middle; /* 3 */
-}
-
-/**
- * Address Firefox 3+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-  line-height: normal;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
- */
-button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
-  *overflow: visible; /* 4 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * 1. Address box sizing set to content-box in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- * 3. Remove excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
- */
-input[type=checkbox],
-input[type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-  *height: 13px; /* 3 */
-  *width: 13px; /* 3 */
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type=search] {
-  -webkit-appearance: textfield; /* 1 */ /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Remove inner padding and border in Firefox 3+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * 1. Remove default vertical scrollbar in IE 6/7/8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-textarea {
-  overflow: auto; /* 1 */
-  vertical-align: top; /* 2 */
-}
-
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
+@charset "UTF-8";
 @font-face {
   font-family: "Courier Prime";
   src: url(../../fonts/CourierPrime-Regular.ttf);
@@ -364,6 +26,7 @@ textarea {
 }
 * {
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 * a {
@@ -371,7 +34,13 @@ textarea {
 }
 
 .header {
-  background: rgb(244, 240, 240);
+  background: url(../../img/my_photo.png);
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  filter: opacity(0.7);
+  padding-bottom: 50px;
 }
 .header .header__wrapper {
   max-width: 1440px;
@@ -379,23 +48,33 @@ textarea {
   margin: 0 auto;
   padding: 10px 15px 0 15px;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "logo . photo photo" "nav text photo photo" "scroll . photo photo";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "logo . " "nav text" "scroll . ";
+  padding-bottom: 150px;
 }
-.header .header__wrapper .header__logo {
+.header .header__wrapper #my-header {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__wrapper #my-header .header__logo {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   grid-area: logo;
+  padding-top: 15px;
 }
-.header .header__wrapper .header__logo .logo__items {
+.header .header__wrapper #my-header .header__logo .logo__items {
   color: rgb(26, 25, 25);
 }
-.header .header__wrapper .header__logo .logo__items .logo__name {
+.header .header__wrapper #my-header .header__logo .logo__items .logo__name {
   font-size: 21px;
 }
-.header .header__wrapper .header__logo .logo__items .logo__surname {
+.header .header__wrapper #my-header .header__logo .logo__items .logo__surname {
   font-size: 28px;
 }
 .header .header__wrapper .header__nav {
@@ -413,6 +92,55 @@ textarea {
 .header .header__wrapper .header__nav .nav__items .nav__item a:hover {
   color: rgb(122, 69, 79);
 }
+.header .header__wrapper .header__burger-menu {
+  display: none;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 1;
+}
+.header .header__wrapper .header__burger-menu .burger-menu__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 20px;
+}
+.header .header__wrapper .header__burger-menu span {
+  margin: auto;
+  width: 34px;
+  height: 2px;
+  background-color: black;
+}
+.header .header__wrapper .header__burger-menu span:before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background-color: black;
+  transform: translateY(-8px);
+  transition: 0.4s;
+}
+.header .header__wrapper .header__burger-menu span:after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background-color: black;
+  transform: translateY(8px);
+  transition: 0.4s;
+}
+.header .header__wrapper .header__burger-menu_active span {
+  height: 0;
+}
+.header .header__wrapper .header__burger-menu_active span:before {
+  transform: rotate(45deg);
+  width: 25px;
+}
+.header .header__wrapper .header__burger-menu_active span::after {
+  transform: rotate(-45deg);
+  width: 25px;
+  margin-left: 0;
+}
 .header .header__wrapper .header__scroll {
   grid-area: scroll;
   display: flex;
@@ -425,18 +153,11 @@ textarea {
   font-size: 10px;
   letter-spacing: 1px;
 }
-.header .header__wrapper .header__photo {
-  grid-area: photo;
-}
-.header .header__wrapper .header__photo img {
-  width: 52%;
-  filter: opacity(0.7);
-  position: fixed;
-}
 .header .header__wrapper .header__text {
   font-family: "Roboto";
   grid-area: text;
   color: rgb(62, 39, 39);
+  z-index: 1;
 }
 .header .header__wrapper .header__text h1 {
   font-weight: 700;
@@ -464,31 +185,67 @@ textarea {
   color: rgb(113, 110, 110);
 }
 
-.about {
-  background: rgb(244, 240, 240);
-  padding: 60px 100px;
+@media (max-width: 768px) {
+  .header .header__wrapper .header__nav {
+    display: none;
+  }
+  .header .header__wrapper .header__burger-menu {
+    display: block;
+    top: 45px;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+  }
+  .header .header__items_active {
+    align-items: center;
+  }
+  .header .header__items_active .header__logo {
+    display: none;
+  }
+  .header .header__items_active .header__nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+  }
+  .header .header__items_active .header__text {
+    padding-top: 150px;
+  }
 }
-.about .about__wrapper {
+.about .about__conteiner {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 0;
+}
+.about .about__conteiner .about__wrapper {
   max-width: 700px;
   width: 100%;
-  background: rgb(202, 171, 177);
+  background: rgba(202, 171, 177, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 60px;
-  color: rgb(25, 25, 25);
   line-height: 20px;
   z-index: 1;
   color: #383632;
+  margin-top: -222px;
+  height: 450px;
 }
-.about .about__wrapper h2 {
+.about .about__conteiner .about__wrapper h2 {
   font-family: "Courier Prime";
   font-weight: 700;
   font-size: 26px;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
-.about .about__wrapper h2::before {
+.about .about__conteiner .about__wrapper h2::before {
   content: "<h2>";
   font-family: "La Belle Aurore", cursive;
   color: #707072;
@@ -497,7 +254,7 @@ textarea {
   font-weight: 400;
   text-transform: none;
 }
-.about .about__wrapper h2::after {
+.about .about__conteiner .about__wrapper h2::after {
   content: "</h2>";
   font-family: "La Belle Aurore", cursive;
   color: #707072;
@@ -506,28 +263,28 @@ textarea {
   font-weight: 400;
   text-transform: none;
 }
-.about .about__wrapper p {
+.about .about__conteiner .about__wrapper p {
   font-family: "Courier Prime";
   font-weight: 400;
   font-size: 16px;
 }
-.about .about__wrapper p::before {
+.about .about__conteiner .about__wrapper p::before {
   content: "<p>";
   font-family: "La Belle Aurore", cursive;
   color: #707072;
   padding: 10px;
 }
-.about .about__wrapper p::after {
+.about .about__conteiner .about__wrapper p::after {
   content: "</p>";
   font-family: "La Belle Aurore", cursive;
   color: #707072;
   padding: 10px;
 }
-.about .about__wrapper .about__button {
+.about .about__conteiner .about__wrapper .about__button {
   padding-top: 65px;
   text-align: center;
 }
-.about .about__wrapper .about__button .about__cv {
+.about .about__conteiner .about__wrapper .about__button .about__cv {
   width: 250px;
   height: 55px;
   overflow: hidden;
@@ -548,12 +305,12 @@ textarea {
   transition: all ease 0.8s;
   color: #383632;
 }
-.about .about__wrapper .about__button .about__cv:hover {
+.about .about__conteiner .about__wrapper .about__button .about__cv:hover {
   color: rgb(244, 240, 240);
   background-size: 200% 200%;
   background-position: 0px 0px;
 }
-.about .about__wrapper .about__button .about__cv::after {
+.about .about__conteiner .about__wrapper .about__button .about__cv::after {
   content: "";
   width: 4px;
   height: 4px;
@@ -569,7 +326,7 @@ textarea {
 .skills .skills__about {
   background: url(../../img/bg_about.jpg);
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 300px;
   text-align: center;
 }
 .skills .skills__about .skills__title {
@@ -584,6 +341,11 @@ textarea {
 .skills .skills__about .skills__title p {
   font-weight: 400;
   font-size: 24px;
+}
+.skills .skills__about .skills__title p span {
+  color: rgb(122, 69, 79);
+  font-weight: 700;
+  background: rgba(200, 200, 217, 0.4);
 }
 .skills .skills__about .skills__list {
   font-family: "Courier Prime";
@@ -605,7 +367,8 @@ textarea {
 .skills .skills__about .skills__list .list__items .list__item {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
 }
 .skills .skills__about .skills__list .list__items .list__item h3 {
   color: rgba(100, 100, 100, 0.9);
@@ -622,12 +385,22 @@ textarea {
   margin-top: 5px;
   background-size: 353px 5px;
   border-radius: 12px;
+  position: relative;
 }
 .skills .skills__about .skills__list .list__items .list__item .list__item_style .list__item_shadow {
   width: 100%;
   height: 15px;
   background: linear-gradient(to bottom, rgba(185, 173, 173, 0.17), rgba(97, 91, 91, 0.1), rgba(53, 51, 51, 0));
   transform: skew(45deg) translate(4px, 3px);
+}
+.skills .skills__about .skills__list .list__items .list__item .full-line {
+  position: absolute;
+  max-width: 494px;
+  width: 100%;
+  height: 5px;
+  background: rgba(200, 200, 217, 0.4117647059);
+  top: 25px;
+  left: 163px;
 }
 .skills .skills__about .skills__list .list__items .list__item .item1 {
   -webkit-animation: loading1 2s ease-in-out forwards;
@@ -719,15 +492,70 @@ textarea {
 }
 @-webkit-keyframes loading7 {
   to {
-    width: 80%;
+    width: 50%;
   }
 }
 @keyframes loading7 {
   to {
-    width: 80%;
+    width: 50%;
   }
 }
+.skills .skills__about .skills__additional {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.skills .skills__about .skills__additional .skills__additional-items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  gap: 20px;
+}
+.skills .skills__about .skills__additional .skills__additional-items .skills__additional-item {
+  display: flex;
+  align-items: center;
+  background: #dbd3ca;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+}
+.skills .skills__about .skills__additional .skills__additional-items .skills__additional-item img {
+  width: 30px;
+  height: 30px;
+}
+.skills .skills__about .skills__additional .skills__additional-items .skills__additional-item p {
+  padding-left: 10px;
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.skills .skills__about .skills__additional-title {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.skills .skills__about .skills__additional-title h3 {
+  font-family: "Courier Prime";
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+}
 
+@media (max-width: 950px) {
+  .skills .skills__about .skills__items .skills__additional {
+    max-width: 600px;
+  }
+  .skills .skills__about .skills__items .skills__additional .skills__additional-items .skills__additional-item img {
+    width: 20px;
+    height: 20px;
+  }
+  .skills .skills__about .skills__items .skills__additional .skills__additional-items .skills__additional-item p {
+    font-size: 12px;
+  }
+}
 .projects {
   position: relative;
 }
@@ -750,27 +578,32 @@ textarea {
   font-weight: 400;
   font-size: 24px;
 }
-.projects .projects__wrapper .card {
+.projects .projects__wrapper .projects__items {
+  padding: 0 15px;
+}
+.projects .projects__wrapper .projects__items .card {
   height: 500px;
   width: 100%;
-  max-width: 1050px;
+  max-width: 800px;
   margin: auto;
   background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  position: relative;
 }
-.projects .projects__wrapper .card .inner_part {
+.projects .projects__wrapper .projects__items .card .inner_part {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   position: absolute;
 }
-.projects .projects__wrapper #slideImg:checked ~ .inner_part {
+.projects .projects__wrapper .projects__items #slideImg:checked ~ .inner_part {
   padding: 0;
   transition: 0.1s ease-in;
 }
-.projects .projects__wrapper .inner_part .img {
+.projects .projects__wrapper .projects__items .inner_part .img {
   width: 100%;
   max-width: 460px;
   height: auto;
@@ -778,27 +611,27 @@ textarea {
   flex-shrink: 0;
   border-radius: 20px;
 }
-.projects .projects__wrapper #slideImg:checked ~ .inner_part .img {
+.projects .projects__wrapper .projects__items #slideImg:checked ~ .inner_part .img {
   height: 350px;
   width: 850px;
   z-index: 99;
   transition: 0.3s 0.2s ease-in;
 }
-.projects .projects__wrapper .img img {
+.projects .projects__wrapper .projects__items .img img {
   height: 100%;
   width: 100%;
   cursor: pointer;
   opacity: 0;
   transition: 0.6s;
 }
-.projects .projects__wrapper #slide_1:checked ~ .inner_part .img_1,
-.projects .projects__wrapper #slide_2:checked ~ .inner_part .img_2,
-.projects .projects__wrapper #slide_3:checked ~ .inner_part .img_3 {
+.projects .projects__wrapper .projects__items #slide_1:checked ~ .inner_part .img_1,
+.projects .projects__wrapper .projects__items #slide_2:checked ~ .inner_part .img_2,
+.projects .projects__wrapper .projects__items #slide_3:checked ~ .inner_part .img_3 {
   opacity: 1;
   transition-delay: 0.2s;
 }
-.projects .projects__wrapper .content {
-  padding: 0 20px 0 20px;
+.projects .projects__wrapper .projects__items .content {
+  padding: 20px;
   width: 530px;
   margin-left: 50px;
   opacity: 0;
@@ -810,31 +643,35 @@ textarea {
   justify-content: space-between;
   font-family: "Courier Prime";
 }
-.projects .projects__wrapper #slideImg:checked ~ .inner_part .content {
+.projects .projects__wrapper .projects__items .content .text-used {
+  padding-top: 20px;
+}
+.projects .projects__wrapper .projects__items #slideImg:checked ~ .inner_part .content {
   display: none;
 }
-.projects .projects__wrapper #slide_1:checked ~ .inner_part .content_1,
-.projects .projects__wrapper #slide_2:checked ~ .inner_part .content_2,
-.projects .projects__wrapper #slide_3:checked ~ .inner_part .content_3 {
+.projects .projects__wrapper .projects__items #slide_1:checked ~ .inner_part .content_1,
+.projects .projects__wrapper .projects__items #slide_2:checked ~ .inner_part .content_2,
+.projects .projects__wrapper .projects__items #slide_3:checked ~ .inner_part .content_3 {
   opacity: 1;
   margin-left: 0;
   z-index: 100;
   transition-delay: 0.3s;
 }
-.projects .projects__wrapper .content .title {
+.projects .projects__wrapper .projects__items .content .title {
   font-size: 30px;
   font-weight: 700;
   color: #0d0925;
   margin: 0 0 20px 0;
 }
-.projects .projects__wrapper .content .text {
+.projects .projects__wrapper .projects__items .content .text {
   font-size: 19px;
   color: #4e4a67;
   margin: 0 auto 30px auto;
   line-height: 1.5em;
   text-align: justify;
+  line-height: 20px;
 }
-.projects .projects__wrapper .content a {
+.projects .projects__wrapper .projects__items .content a {
   width: 200px;
   border: none;
   font-size: 14px;
@@ -842,10 +679,22 @@ textarea {
   line-height: 50px;
   font-family: "Courier Prime";
   font-weight: 700;
-  border: 1px solid rgb(26, 25, 25);
   color: #383632;
-  outline: none;
   float: right;
+  border: 0 solid;
+  box-shadow: inset 0 0 4px rgb(122, 69, 79);
+  outline: 1px solid;
+  outline-color: rgba(122, 69, 79, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.projects .projects__wrapper .projects__items .content a:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(122, 69, 79, 0.5), 0 0 20px rgba(122, 69, 79, 0.2);
+  outline-color: rgba(122, 69, 79, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px rgb(202, 171, 177);
 }
 .projects .projects__wrapper .content button:hover {
   background: #cecece;
@@ -853,8 +702,8 @@ textarea {
 }
 .projects .projects__wrapper .slider {
   position: absolute;
-  bottom: 25px;
-  left: 50%;
+  top: -50px;
+  left: 270px;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -863,13 +712,28 @@ textarea {
 }
 .projects .projects__wrapper .slider .slide {
   position: relative;
-  height: 10px;
-  width: 50px;
-  background: #d9d9d9;
-  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  background: rgb(202, 171, 177);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   display: inline-flex;
   margin: 0 3px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.projects .projects__wrapper .slider .slide:hover {
+  background: rgb(122, 69, 79);
+  color: #dbd3ca;
+}
+.projects .projects__wrapper .slide_1::after {
+  content: "Solis";
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: "Courier Prime";
+  font-weight: 700;
 }
 .projects .projects__wrapper .slider .slide:before {
   position: absolute;
@@ -878,8 +742,8 @@ textarea {
   left: 0;
   height: 100%;
   width: -100%;
-  background: rgb(122, 69, 79);
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   transform: scaleX(0);
   transition: transform 0.6s;
   transform-origin: left;
@@ -894,6 +758,27 @@ textarea {
   display: none;
 }
 
+@media (max-width: 1095px) {
+  .projects .projects__wrapper .slider {
+    left: 185px;
+  }
+  .projects .projects__wrapper .slider .slide {
+    width: 99px;
+  }
+  .projects .projects__wrapper .projects__items .card {
+    height: 860px;
+    max-width: 574px;
+    width: 100%;
+  }
+  .projects .projects__wrapper .projects__items .card .inner_part {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .projects .projects__wrapper .projects__items .content {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .experience {
   position: relative;
 }
@@ -903,28 +788,34 @@ textarea {
   padding: 100px 0;
   text-align: center;
 }
-.experience .experience__wrapper .experience__title {
+.experience .experience__wrapper .experience__items {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.experience .experience__wrapper .experience__items .experience__title {
   font-family: "Courier Prime";
   padding-bottom: 40px;
   text-transform: uppercase;
 }
-.experience .experience__wrapper .experience__title h2 {
+.experience .experience__wrapper .experience__items .experience__title h2 {
   font-weight: 700;
   font-size: 40px;
 }
-.experience .experience__wrapper .experience__title p {
+.experience .experience__wrapper .experience__items .experience__title p {
   font-weight: 400;
   font-size: 24px;
 }
-.experience .experience__wrapper .time-line {
+.experience .experience__wrapper .experience__items .time-line {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.experience .experience__wrapper .time-line .circle {
+.experience .experience__wrapper .experience__items .time-line .circle {
   padding-right: 2px;
 }
-.experience .experience__wrapper .time-line .experience__cards {
+.experience .experience__wrapper .experience__items .time-line .experience__cards {
   display: grid;
   position: absolute;
   grid-template-columns: 1fr 1fr;
@@ -932,49 +823,197 @@ textarea {
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 20px;
-  padding-top: 50px;
+  padding: 50px 15px 0 15px;
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__card {
-  width: 354px;
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card {
+  max-width: 425px;
+  width: 100%;
   background: white;
   text-align: justify;
   color: #383632;
   padding: 20px;
   border-radius: 30px;
+  margin-top: -29px;
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__card .experience__name {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name {
   font-family: "Courier Prime";
   display: flex;
   padding-bottom: 10px;
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__card .experience__name .experience__name-position {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-position {
   font-weight: 700;
   font-size: 18px;
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__card .experience__name .experience__name-position::after {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-position::after {
   content: "/";
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__card .experience__name .experience__name-company {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-company {
   font-weight: 700;
   font-size: 18px;
   color: rgb(122, 69, 79);
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__details {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card p {
+  font-family: "Courier Prime";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383632;
+}
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__details {
   display: flex;
   flex-direction: column;
 }
-.experience .experience__wrapper .time-line .experience__cards .experience__details p {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__details p {
   font-family: "Courier Prime";
   color: #707072;
   font-size: 16px;
   font-weight: 400;
   text-transform: none;
 }
-.experience .experience__wrapper .time-line .experience__cards .details1 {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .details1, .experience .experience__wrapper .experience__items .time-line .experience__cards .details3 {
   align-items: flex-start;
   padding-top: 40px;
 }
-.experience .experience__wrapper .time-line .experience__cards .details2 {
+.experience .experience__wrapper .experience__items .time-line .experience__cards .details2 {
   align-items: flex-end;
   padding-top: 48px;
+}
+
+@media (max-width: 1095px) {
+  .experience .experience__wrapper {
+    padding-bottom: 50px;
+  }
+  .experience .experience__wrapper .experience__items .time-line {
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__details {
+    display: none;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .card1 .experience__name::after {
+    content: "/May 2019 - March 2021/Saudi Arabia";
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .card2 .experience__name::after {
+    content: "/September 2016 – September 2018/Ukraine";
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .card3 .experience__name::after {
+    content: "/September 2013 – September 2016/Ukraine";
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+}
+.contacts {
+  position: relative;
+}
+.contacts .contacts__wrapper {
+  background: #fff;
+}
+.contacts .contacts__wrapper .contacts__items {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.contacts .contacts__wrapper .contacts__items h3 {
+  padding-top: 70px;
+  font-family: "Courier Prime";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.contacts .contacts__wrapper .contacts__items p {
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-size: 19px;
+  padding-top: 30px;
+}
+.contacts .contacts__wrapper .contacts__items p a {
+  color: #4e4a67;
+}
+.contacts .contacts__wrapper .contacts__items p a::-moz-selection {
+  background: #4e4a67;
+  color: #ffffff;
+}
+.contacts .contacts__wrapper .contacts__items p a::selection {
+  background: #4e4a67;
+  color: #ffffff;
+}
+.contacts .contacts__wrapper .contacts__items .telegram {
+  color: #4e4a67;
+}
+.contacts .contacts__wrapper .contacts__items .telegram::-moz-selection {
+  background: #4e4a67;
+  color: #ffffff;
+}
+.contacts .contacts__wrapper .contacts__items .telegram::selection {
+  background: #4e4a67;
+  color: #ffffff;
+}
+.contacts .contacts__wrapper .contacts__items .social-networks {
+  padding: 80px 0 50px 30px;
+  font-size: 25px;
+}
+.contacts .contacts__wrapper .contacts__items .social-networks .social-networks__item {
+  color: rgb(26, 25, 25);
+  outline: 0;
+}
+.contacts .contacts__wrapper .contacts__items .social-networks .social-networks__item i {
+  padding-right: 30px;
+}
+.contacts .contacts__wrapper .contacts__items .social-networks .social-networks__item i:hover {
+  color: rgb(122, 69, 79);
+}
+
+.footer {
+  position: relative;
+  background: white;
+}
+.footer .footer_wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  border-top: 1px solid rgb(218, 218, 218);
+}
+.footer .footer_wrapper .footer_items {
+  display: flex;
+  justify-content: center;
+  color: #383632;
+  font-family: "Courier Prime";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383632;
+  padding: 15px 0;
+}
+.footer .footer_wrapper .footer_items .footer_item1 {
+  opacity: 0.6;
+  padding-right: 15px;
+}
+.footer .footer_wrapper .footer_items .footer_item2 {
+  font-weight: 700;
 }

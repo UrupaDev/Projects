@@ -1,0 +1,170 @@
+.experience {
+  position: relative;
+
+  .experience__wrapper {
+    background: url(../../img/texture2.webp);
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+
+    .experience__items {
+      max-width: 1440px;
+      width: 100%;
+      margin: auto;
+
+      .experience__title {
+        font-family: "Courier Prime";
+        padding-bottom: 40px;
+        text-transform: uppercase;
+  
+        h2 {
+          font-weight: 700;
+          font-size: 40px;
+        } 
+        p {
+          font-weight: 400;
+          font-size: 24px;
+        }
+      }
+  
+      .time-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        .circle {
+          padding-right: 2px;
+        }
+  
+        .experience__cards {
+          display: grid;
+          position: absolute;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          column-gap: 100px;
+          row-gap: 20px;
+          padding: 50px 15px 0 15px;
+  
+          .experience__card {
+            max-width: 425px;
+            width: 100%;
+            background: white;
+            text-align: justify;
+            color: #383632;
+            padding: 20px;
+            border-radius: 30px;
+            margin-top: -29px;
+    
+            .experience__name {
+              font-family: "Courier Prime";
+              display: flex;
+              padding-bottom: 10px;
+              
+              .experience__name-position {
+                font-weight: 700;
+                font-size: 18px;
+    
+                &::after {
+                  content: '/';
+                }
+              }
+    
+              .experience__name-company {
+                font-weight: 700;
+                font-size: 18px;
+                color: rgb(122, 69, 79);
+              }
+            }
+  
+            p {
+              font-family: "Courier Prime";
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 20px;
+              color: #383632;
+            }
+          }
+  
+          .experience__details {
+            display: flex;
+            flex-direction: column;
+    
+            p {
+              font-family: "Courier Prime";
+              color: #707072;
+              font-size: 16px;
+              font-weight: 400;
+              text-transform: none;
+            }
+          }
+  
+          .details1, .details3 {
+            align-items: flex-start;
+            padding-top: 40px;
+          }
+  
+          .details2 {
+            align-items: flex-end;
+            padding-top: 48px;
+          }
+        }
+      } 
+    }
+  }
+}
+
+@media (max-width: 1095px) {
+  .experience .experience__wrapper {
+    padding-bottom: 50px;
+
+    .experience__items .time-line {
+      align-items: flex-start;
+      padding-left: 30px;
+
+      .experience__cards {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+  
+        .experience__details {
+          display: none;
+        }
+
+        .experience__card {
+          max-width: 800px;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+
+        .card1 .experience__name::after {
+          content: '/May 2019 - March 2021/Saudi Arabia';
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          opacity: 0.8;
+        }
+
+        .card2 .experience__name::after {
+          content: '/September 2016 – September 2018/Ukraine';
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          opacity: 0.8;
+        }
+
+        .card3 .experience__name::after {
+          content: '/September 2013 – September 2016/Ukraine';
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
