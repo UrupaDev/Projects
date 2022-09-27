@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   width: 100%;
-  filter: opacity(0.7);
 
   .header__wrapper {
     max-width: 1440px;
@@ -181,7 +180,7 @@
 
 @media (max-width: 768px) {
   .header {
-    background-size: 700px;
+    background-size: 800px;
 
     .header__wrapper {
       height: 850px;
@@ -193,10 +192,11 @@
       .header__burger-menu  {
         display: block;
         top: 25px;
-        position: absolute;
+        position: fixed;
         right: 0;
         padding: 15px;
         background: rgba(255, 255, 255, 0.8196078431);
+        z-index: 2;
       }
 
       .header__scroll {
@@ -211,29 +211,27 @@
   }
 
   .header .header__items_active {
-    align-items: center;
-
-    .header__logo {
-      display: none;
-    }
 
     .header__nav {
       display: flex;
       flex-direction: column;
-      min-width: 100px;
+      max-width: 180px;
       width: 100%;
-      align-content: center;
       align-items: center;
-      position: absolute;
-      top: 50px;
+      position: fixed;
+      right: 0;
+      top: 74px;
+      padding-top: 50px;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 2;
 
       .nav__items {
         padding-top: 0;
-      }
-    }
 
-    .header__text {
-      padding-top: 150px;
+        .nav__item {
+          font-size: 20px;
+        }
+      }
     }
   }
 }

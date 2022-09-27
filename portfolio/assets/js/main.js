@@ -10,7 +10,7 @@ wow.init();
 
 // window.onscroll = function() {myFunction()};
   
-// var menu = document.getElementById("my-header");
+// var menu = document.getElementById("header__burger-menu");
 // var sticky = menu.offsetTop;
       
 //   function myFunction() {
@@ -19,18 +19,52 @@ wow.init();
 //     } else {
 //       menu.classList.remove("sticky");
 //     }
-  // }
+//   }
+
 
 
 // burger menu
 let burger = document.getElementsByClassName('header__burger-menu')[0];
 let header__items = document.getElementsByClassName('header__wrapper')[0];
-let body = document.getElementsByClassName('body')[0];
-// let menu = document.querySelectorAll('.header__menu-item')[0];
+let menu1 = document.querySelectorAll('.nav__item')[0];
+let menu2 = document.querySelectorAll('.nav__item')[1];
+let menu3 = document.querySelectorAll('.nav__item')[2];
+let menu4 = document.querySelectorAll('.nav__item')[3];
 
 burger.addEventListener("click", function(e) {
     burger.classList.toggle('header__burger-menu_active');
     header__items.classList.toggle('header__items_active');
+}, false);
+
+
+// працює але не на клік
+// document.querySelectorAll('li').forEach(function (elem) {
+// 	elem.classList.add('header__burger-menu_active');
+// });
+
+
+menu1.addEventListener("click", function(e) {
+  burger.classList.toggle('header__burger-menu_active');
+  header__items.classList.toggle('header__items_active');
+  menu1.classList.toggle('header__burger-menu_active');
+}, false);
+
+menu2.addEventListener("click", function(e) {
+  burger.classList.toggle('header__burger-menu_active');
+  header__items.classList.toggle('header__items_active');
+  menu2.classList.toggle('header__burger-menu_active');
+}, false);
+
+menu3.addEventListener("click", function(e) {
+  burger.classList.toggle('header__burger-menu_active');
+  header__items.classList.toggle('header__items_active');
+  menu3.classList.toggle('header__burger-menu_active');
+}, false);
+
+menu4.addEventListener("click", function(e) {
+  burger.classList.toggle('header__burger-menu_active');
+  header__items.classList.toggle('header__items_active');
+  menu4.classList.toggle('header__burger-menu_active');
 }, false);
 
 

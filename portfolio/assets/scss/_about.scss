@@ -115,3 +115,14 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .about .about__conteiner {
+    height: 450px;
+
+    .about__wrapper {
+      margin-top: 0;
+    }
+  }
+}
