@@ -183,10 +183,11 @@
 
 @media (max-width: 768px) {
   .header {
-    background-size: 800px;
+    background-size: 600px;
+    background-position: center;
   }
   .header .header__wrapper {
-    height: 850px;
+    height: 590px;
   }
   .header .header__wrapper .header__nav {
     display: none;
@@ -204,8 +205,14 @@
     display: none;
   }
   .header .header__wrapper .header__text {
-    margin-top: 265px;
+    margin-top: 175px;
     padding-left: 16px;
+  }
+  .header .header__wrapper .header__logo .logo__items .logo__name {
+    font-size: 15px;
+  }
+  .header .header__wrapper .header__logo .logo__items .logo__surname {
+    font-size: 20px;
   }
   .header .header__items_active .header__nav {
     display: flex;
@@ -252,7 +259,7 @@
 .about .about__conteiner .about__wrapper h2 {
   font-family: "Courier Prime";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
@@ -337,6 +344,28 @@
   }
   .about .about__conteiner .about__wrapper {
     margin-top: 0;
+    padding: 30px;
+  }
+  .about .about__conteiner .about__wrapper h2 {
+    font-size: 30px;
+  }
+  .about .about__conteiner .about__wrapper p {
+    font-size: 12px;
+  }
+  .about .about__conteiner .about__wrapper .about__button {
+    padding-top: 30px;
+  }
+  .about .about__conteiner .about__wrapper .about__button .about__cv {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 370px) {
+  .about .about__conteiner {
+    height: 510px;
+  }
+  .about .about__conteiner .about__wrapper {
+    height: 530px;
   }
 }
 .skills {
@@ -579,6 +608,40 @@
   .skills .skills__about {
     padding-top: 50px;
   }
+  .skills .skills__about .skills__list .list__items {
+    max-width: 300px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .skills .skills__about .skills__list .list__items .list__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills .skills__about .skills__list .list__items .list__item .full-line {
+    top: 41px;
+    left: 0;
+  }
+  .skills .skills__about .skills__items .skills__additional {
+    max-width: 300px;
+  }
+  .skills .skills__about .skills__items .skills__additional .skills__additional-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .skills .skills__about .skills__items .skills__additional .skills__additional-items .skills__additional-item {
+    width: 140px;
+  }
+  .skills .skills__about .skills__title h2 {
+    font-size: 30px;
+  }
+  .skills .skills__about .skills__title p {
+    font-size: 20px;
+  }
+  .skills .skills__about .skills__additional-title h3 {
+    font-size: 20px;
+  }
 }
 .projects {
   position: relative;
@@ -727,6 +790,35 @@
     max-width: 830px;
   }
 }
+@media (max-width: 768px) {
+  .projects .projects__wrapper .projects__title h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .projects .projects__wrapper {
+    padding: 50px 0;
+  }
+  .projects .projects__wrapper .projects__items .tabs > label {
+    max-width: 92px;
+    font-size: 12px;
+  }
+  .projects .projects__wrapper .projects__items .tabs .inner_part .content {
+    padding: 20px 0 20px 0;
+  }
+  .projects .projects__wrapper .projects__items .tabs .inner_part .content .title {
+    font-size: 20px;
+    margin: 0 0 30px 0;
+  }
+  .projects .projects__wrapper .projects__items .tabs .inner_part .content .text {
+    font-size: 12px;
+  }
+  .projects .projects__wrapper .projects__items .tabs .inner_part .content a {
+    line-height: 40px;
+    width: 130px;
+    font-size: 12px;
+  }
+}
 .experience {
   position: relative;
 }
@@ -792,13 +884,13 @@
   font-weight: 700;
   font-size: 18px;
 }
-.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-position::after {
-  content: "/";
-}
 .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-company {
   font-weight: 700;
   font-size: 18px;
   color: rgb(122, 69, 79);
+}
+.experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name .experience__name-company::before {
+  content: "/";
 }
 .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card p {
   font-family: "Courier Prime";
@@ -874,6 +966,44 @@
     opacity: 0.8;
   }
 }
+@media (max-width: 768px) {
+  .experience .experience__wrapper .experience__items .experience__title {
+    padding-bottom: 20px;
+  }
+  .experience .experience__wrapper .experience__items .experience__title h2 {
+    font-size: 30px;
+  }
+  .experience .experience__wrapper .experience__items .experience__title p {
+    font-size: 20px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 816px) {
+  .experience .experience__wrapper {
+    padding: 50px 0 0 10px;
+  }
+  .experience .experience__wrapper .experience__items .time-line {
+    padding-left: 0;
+  }
+  .experience .experience__wrapper .experience__items .time-line svg {
+    display: none;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards {
+    position: relative;
+    padding-left: 15px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .experience .experience__wrapper .experience__items .time-line .experience__cards .experience__card .experience__name::after {
+    padding-left: 0;
+    text-align: start;
+    font-size: 12px;
+  }
+}
 .contacts {
   position: relative;
 }
@@ -936,6 +1066,17 @@
   color: rgb(122, 69, 79);
 }
 
+@media (max-width: 768px) {
+  .contacts .contacts__wrapper .contacts__items h3 {
+    font-size: 30px;
+  }
+  .contacts .contacts__wrapper .contacts__items p {
+    font-size: 14px;
+  }
+  .contacts .contacts__wrapper .contacts__items .social-networks {
+    font-size: 20px;
+  }
+}
 .footer {
   position: relative;
   background: white;
@@ -964,4 +1105,10 @@
 }
 .footer .footer_wrapper .footer_items .footer_item2 {
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .footer .footer_wrapper .footer_items {
+    font-size: 12px;
+  }
 }

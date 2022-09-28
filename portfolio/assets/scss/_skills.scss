@@ -241,5 +241,51 @@
 
   .skills .skills__about {
     padding-top: 50px;
+
+    .skills__list .list__items {
+      max-width: 300px;
+      width: 100%;
+      padding-bottom: 50px;
+
+      .list__item {
+        display: flex;
+        flex-direction: column;
+
+        .full-line {
+          top: 41px;
+          left: 0;
+        }
+      }
+    }
+
+    .skills__items .skills__additional {
+      max-width: 300px;
+
+      .skills__additional-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-bottom: 50px;
+
+        .skills__additional-item {
+          width: 140px;
+        }
+      }
+    }
+
+    .skills__title {
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .skills__additional-title h3 {
+      font-size: 20px;
+    }
   }
 }

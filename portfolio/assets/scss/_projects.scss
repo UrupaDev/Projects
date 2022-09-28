@@ -165,3 +165,46 @@
     max-width: 830px;
   }
 }
+
+@media (max-width: 768px) {
+  .projects .projects__wrapper .projects__title {
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+
+  .projects .projects__wrapper {
+    padding: 50px 0;
+
+    .projects__items {
+
+      .tabs > label {
+        max-width: 92px;
+        font-size: 12px;
+      }
+  
+      .tabs .inner_part .content {
+        padding: 20px 0 20px 0;
+  
+        .title {
+          font-size: 20px;
+          margin: 0 0 30px 0;
+        }
+  
+        .text {
+          font-size: 12px;
+        }
+  
+        a {
+          line-height: 40px;
+          width: 130px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

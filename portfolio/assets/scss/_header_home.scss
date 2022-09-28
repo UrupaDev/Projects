@@ -180,10 +180,11 @@
 
 @media (max-width: 768px) {
   .header {
-    background-size: 800px;
+    background-size: 600px;
+    background-position: center;
 
     .header__wrapper {
-      height: 850px;
+      height: 590px;;
 
       .header__nav {
         display: none;
@@ -204,8 +205,19 @@
       }
 
       .header__text {
-        margin-top: 265px;
+        margin-top: 175px;
         padding-left: 16px;
+      }
+
+      .header__logo .logo__items {
+
+        .logo__name {
+          font-size: 15px;
+        }
+
+        .logo__surname {
+          font-size: 20px;
+        }
       }
     }
   }

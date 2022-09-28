@@ -64,16 +64,16 @@
               .experience__name-position {
                 font-weight: 700;
                 font-size: 18px;
-    
-                &::after {
-                  content: '/';
-                }
               }
     
               .experience__name-company {
                 font-weight: 700;
                 font-size: 18px;
                 color: rgb(122, 69, 79);
+
+                &::before {
+                  content: '/';
+                }
               }
             }
   
@@ -163,6 +163,59 @@
           align-items: center;
           font-size: 14px;
           opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .experience .experience__wrapper .experience__items {
+
+    .experience__title {
+      padding-bottom: 20px;
+  
+      h2 {
+        font-size: 30px;
+      }
+  
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .time-line .experience__cards .experience__card p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 816px) {
+
+  .experience .experience__wrapper {
+    padding: 50px 0 0 10px;
+
+    .experience__items .time-line {
+      padding-left: 0;
+  
+      svg {
+        display: none;
+      }
+  
+      .experience__cards {
+        position: relative;
+        padding-left: 15px;
+  
+        .experience__card .experience__name {
+          flex-direction: column;
+          gap: 5px;
+  
+          &::after {
+            padding-left: 0;
+            text-align: start;
+            font-size: 12px;
+          }
         }
       }
     }

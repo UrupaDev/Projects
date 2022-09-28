@@ -63,3 +63,21 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .contacts .contacts__wrapper .contacts__items {
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .social-networks {
+      font-size: 20px;
+    }
+  }
+}

@@ -25,7 +25,7 @@
       h2 {
         font-family: "Courier Prime";
         font-weight: 700;
-        font-size: 26px;
+        font-size: 30px;
         padding-bottom: 20px;
         text-transform: uppercase;
   
@@ -123,6 +123,34 @@
 
     .about__wrapper {
       margin-top: 0;
+      padding: 30px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .about__button {
+        padding-top: 30px;
+
+        .about__cv {
+          width: 200px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .about .about__conteiner {
+    height: 510px;
+
+    .about__wrapper {
+      height: 530px;
     }
   }
 }
