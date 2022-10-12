@@ -566,7 +566,7 @@
   border-radius: 20px;
   width: 150px;
   height: 40px;
-  justify-content: center;
+  padding-left: 10px;
 }
 .skills .skills__about .skills__additional .skills__additional-items .skills__additional-item img {
   width: 30px;
