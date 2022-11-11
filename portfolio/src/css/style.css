@@ -470,12 +470,12 @@
 }
 @-webkit-keyframes loading2 {
   to {
-    width: 30%;
+    width: 60%;
   }
 }
 @keyframes loading2 {
   to {
-    width: 30%;
+    width: 60%;
   }
 }
 .skills .skills__about .skills__list .list__items .list__item .item3 {
@@ -484,12 +484,12 @@
 }
 @-webkit-keyframes loading3 {
   to {
-    width: 70%;
+    width: 60%;
   }
 }
 @keyframes loading3 {
   to {
-    width: 70%;
+    width: 60%;
   }
 }
 .skills .skills__about .skills__list .list__items .list__item .item4 {
@@ -498,12 +498,12 @@
 }
 @-webkit-keyframes loading4 {
   to {
-    width: 70%;
+    width: 50%;
   }
 }
 @keyframes loading4 {
   to {
-    width: 70%;
+    width: 50%;
   }
 }
 .skills .skills__about .skills__list .list__items .list__item .item5 {
@@ -512,12 +512,12 @@
 }
 @-webkit-keyframes loading5 {
   to {
-    width: 60%;
+    width: 40%;
   }
 }
 @keyframes loading5 {
   to {
-    width: 60%;
+    width: 40%;
   }
 }
 .skills .skills__about .skills__list .list__items .list__item .item6 {
@@ -540,12 +540,12 @@
 }
 @-webkit-keyframes loading7 {
   to {
-    width: 50%;
+    width: 70%;
   }
 }
 @keyframes loading7 {
   to {
-    width: 50%;
+    width: 70%;
   }
 }
 .skills .skills__about .skills__additional {
@@ -743,7 +743,7 @@
   border-radius: 10px;
 }
 .projects .projects__wrapper .projects__items .tabs > label {
-  max-width: 120px;
+  max-width: 140px;
   width: 100%;
   display: inline-block;
   text-align: center;

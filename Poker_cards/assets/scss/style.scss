@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Venzel";
+  src: url(../../src/fonts/Venzel-bold-Regular.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main-conteiner {
+  display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+
+  #wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  
+    .quote {
+    
+        .card {
+          position: relative;
+          font-family: "Venzel";
+          transform: rotateX(180deg);
+          transform: rotateY(180deg);
+          width: 200px;
+          height: 300px;
+          // perspective: 30em;
+          // animation-name: card1;
+          // animation-duration: 4s;
+          // animation-timing-function: ease-in;
+          // animation-delay: 2s;
+    
+            .cards-2-sides {
+              width:100%;
+              height:100%;
+              position:relative;
+              // transition: transform 0.9s;
+              // transform-style: preserve-3d;
+          
+              .front, .back {
+                width:100%;
+                height:100%;
+                position:absolute;
+              }
+    
+              .front {
+                background-color: white;
+                border-radius: 11px;
+                box-shadow: 0 0 8px 0px rgba(0,0,0,0.74);
+    
+                .top-letter {
+                  position: absolute;
+                  top: 5px;
+                  left: 13px;
+                  font-size: 45px;
+                  line-height: 26px;
+                } 
+        
+                .bottom-letter {
+                  position: absolute;
+                  bottom: 6px;
+                  right: 7px;
+                  font-size: 45px;
+                  line-height: 26px;
+                  transform: rotateX(180deg);
+                }
+    
+                .red {
+                  color: red;
+                }
+    
+                .figures {
+                  display: grid;
+                  grid-template-rows: 1fr 1fr 1fr;
+                  height: 300px;
+                  align-items: center;
+        
+                  .figure1 {
+                    margin: 15px 0 0 12px;
+                  }
+                  .figure-main {
+                    margin: auto;
+                  }
+                  .figure2 {
+                    margin: 180px 0 0 167px;
+                    transform: rotateX(180deg);
+                    position: absolute;
+                  }
+                }
+              }
+    
+              .back {
+                backface-visibility:hidden;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: #28282B;
+                border-radius: 10px;
+              }
+            }
+          
+            &:hover .cards-2-sides {
+              transform: rotateY(180deg);
+            }
+      }
+    }
+  }
+  
+  #randomize {
+    width: 200px;
+    height: 300px;
+    background: #28282B;
+    border-radius: 10px;
+  }
+}
