@@ -500,12 +500,12 @@
 }
 @-webkit-keyframes loading4 {
   to {
-    width: 50%;
+    width: 90%;
   }
 }
 @keyframes loading4 {
   to {
-    width: 50%;
+    width: 90%;
   }
 }
 .skills .skills__about .skills__list .list__items .list__item .item5 {
@@ -796,8 +796,11 @@
   .projects .projects__wrapper .projects__title h2 {
     font-size: 30px;
   }
+  .projects .projects__wrapper .projects__items .tabs .inner_part .content a {
+    margin: auto;
+  }
 }
-@media (max-width: 410px) {
+@media (max-width: 475px) {
   .projects .projects__wrapper {
     padding: 50px 0;
   }

@@ -167,15 +167,22 @@
 }
 
 @media (max-width: 768px) {
-  .projects .projects__wrapper .projects__title {
+  .projects .projects__wrapper {
+  
+  .projects__title {
 
     h2 {
       font-size: 30px;
     }
   }
+
+    .projects__items .tabs .inner_part .content a {
+      margin: auto;
+    }
+  }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 475px) {
 
   .projects .projects__wrapper {
     padding: 50px 0;
