@@ -26,7 +26,7 @@
         font-family: "Courier Prime";
         font-weight: 700;
         font-size: 30px;
-        padding-bottom: 20px;
+        padding: 20px 0 20px 0;
         text-transform: uppercase;
   
         &::before {
@@ -71,7 +71,7 @@
       }
   
       .about__button {
-        padding-top: 65px;
+        padding-top: 24px;
         text-align: center;
   
         .about__cv {

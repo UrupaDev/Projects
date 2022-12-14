@@ -262,7 +262,7 @@
   font-family: "Courier Prime";
   font-weight: 700;
   font-size: 30px;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
   text-transform: uppercase;
 }
 .about .about__conteiner .about__wrapper h2::before {
@@ -301,7 +301,7 @@
   padding: 10px;
 }
 .about .about__conteiner .about__wrapper .about__button {
-  padding-top: 65px;
+  padding-top: 24px;
   text-align: center;
 }
 .about .about__conteiner .about__wrapper .about__button .about__cv {
